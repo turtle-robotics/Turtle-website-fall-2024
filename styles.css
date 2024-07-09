@@ -5,3 +5,33 @@
     --aggie-maroon: #500000;
     --barley-white: #FFEFCE;
 }
+
+/*all elements and anything after and before */
+*,
+*::after,
+*::before{
+    /* the width and height calculations include the padding and border */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 214px;
+    height: 92px;
+    border-radius: 30px; 
+    color: var(--alto);
+    background: var(--aggie-maroon);
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+}
