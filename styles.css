@@ -24,6 +24,8 @@ body {
 .main-wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
     background: radial-gradient(50% 50% at 50% 50%, #500000 0%, #4E0000 28.5%, #4E0017 50%, #000 100%);
 }
 
@@ -45,16 +47,19 @@ body {
 }
 
 header {
-    height: 100vh;
     width: 100%;
+    height: auto;
+    margin-bottom: 34px;
 }
+
+/* Styling navbar*/
 
 nav {
     display: flex;
     justify-content: space-between;
-    position: fixed;
     width: 1200px;
-    top: 73px;
+    top: 52px;
+    position: absolute;
     z-index: 1;
 }
 
@@ -64,11 +69,14 @@ nav .top-logo {
     flex-shrink: 0;
 }
 
+
 nav ul {
     display: flex;
     align-items: center;
     gap: 48px;
     list-style: none;
+    position: absolute;
+    left: 496px;
 }
 
 nav ul li a {
@@ -82,12 +90,19 @@ nav ul li a {
     text-decoration: none;
 }
 
+.hamburger {
+    position: absolute;
+    right: 40px;
+}
+
+/* end of navbar styling */
+
 .hero-section {
     display: flex;
-    height: 100vh;
     width: 100%;
-    align-items: center;
+    align-items: top;
     justify-content: space-between;
+    padding-top: 178px;
 }
 
 
@@ -111,8 +126,90 @@ nav ul li a {
     font-weight: 500;
 }
 
-.hero-section .turtle-screwdriver img{
+.hero-section .turtle-screwdriver img {
     width: 434px;
     height: 395px;
-    flex-shrink: 0;
 }
+
+/* mission section */
+
+.mission-section {
+    background: var(--mine-shaft);
+    border-radius: 30px;
+    padding-top: 54.69px;
+    padding-bottom: 72.59px;
+    margin-bottom: 43px;
+}
+
+.mission-section h3 {
+    text-align: center;
+    color: var(--alto);
+    /* turtle website subheading 1 */
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.mission-section p {
+    /* turtle website largest body text */
+    text-align: center;
+    color: var(--alto);
+    font-family: Raleway;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* mission section end */
+
+/* featured project section */
+.featured-project-section {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 30px;
+    padding-top: 46px;
+    padding-bottom: 29px;
+    padding-left: 43px;
+}
+
+.featured-project-section .featured-project-items {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-project-section img {
+    width: 304.472px;
+height: 287px;
+}
+
+.featured-project-section h2 {
+    text-align: left;
+    color: black;
+    /* turtle website subheading 1 */
+    font-family: Raleway;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.featured-project-section p {
+    text-align: center;
+    color: black;
+    font-family: Raleway;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.featured-project-section .btn {
+    position:absolute;
+    left: 120px;
+    top: 30px;
+}
+
+/* featured project section end */
