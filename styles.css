@@ -9,14 +9,22 @@
 /*all elements and anything after and before */
 *,
 *::after,
-*::before{
+*::before {
     /* the width and height calculations include the padding and border */
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    color: white;
     font-family: "Raleway", sans-serif;
+}
+
+
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: radial-gradient(50% 50% at 50% 50%, #500000 0%, #4E0000 28.5%, #4E0017 50%, #000 100%);
 }
 
 .btn {
@@ -25,7 +33,7 @@ body {
     align-items: center;
     width: 214px;
     height: 92px;
-    border-radius: 30px; 
+    border-radius: 30px;
     color: var(--alto);
     background: var(--aggie-maroon);
     font-family: "Inter", sans-serif;
@@ -34,4 +42,77 @@ body {
     font-weight: 700;
     text-transform: capitalize;
     text-decoration: none;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 1200px;
+    top: 73px;
+    z-index: 1;
+}
+
+nav .top-logo {
+    width: 176px;
+    height: 70.218px;
+    flex-shrink: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--alto);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.hero-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.hero-section .left h3 {
+    color: var(--barley-white);
+    /* turtle website subheading 1 */
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.hero-section .left h1 {
+    color: var(--barley-white);
+    /* turtle website h1 */
+    font-family: Raleway;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.hero-section .turtle-screwdriver img{
+    width: 434px;
+    height: 395px;
+    flex-shrink: 0;
 }
