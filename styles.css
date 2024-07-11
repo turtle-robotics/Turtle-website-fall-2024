@@ -19,6 +19,7 @@ body {
     color: white;
     font-family: "Raleway", sans-serif;
     width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -215,7 +216,8 @@ nav ul li a {
 
 .get-involved-section {
     margin-top: 50px;
-
+    padding-left: 1.88rem;
+    padding-right: 1.88rem;
 }
 
 .get-involved-section h2 {
@@ -237,7 +239,9 @@ nav ul li a {
 }
 
 .join-card {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .join-card .btn {
@@ -245,9 +249,8 @@ nav ul li a {
 }
 
 .join-card img {
-    width: 70%;
-    height: auto;
-    margin-left: 15%;
+    max-width: 43.25rem;
+    max-height: 16.125rem;
     border-radius: 25px;
 }
 
@@ -256,7 +259,7 @@ nav ul li a {
     color: #000;
     border-radius: 25px;
     background-color: white;
-    padding-top: 40px;
+    padding-top: 2.38rem;
 }
 
 .partner-box h2 {
@@ -269,7 +272,8 @@ nav ul li a {
 }
 
 .partner-box img {
-    width: 80%;
+    width: 41.8125rem;
+    height: 14.875rem;
 }
 
 .contact-us-section {
@@ -285,7 +289,8 @@ footer {
 .footer-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 3.06rem;
     padding: 15px 32%;
     color: #000;
 }
@@ -297,8 +302,9 @@ footer {
 .icon-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 15px 35%;
+    justify-content: center;
+    gap: 2.87rem;
+    padding: 15px 32%;
     color: #000;
 }
 
@@ -322,8 +328,19 @@ footer {
     justify-content: center;
 }
 
+@media (max-width: 1120px) {
+    .join-card {
+        flex-direction: column;
+    }
+
+    .join-card img {
+        margin-top: 2.75rem;
+    }
+}
+
 @media (max-width: 925px) {
     nav ul {
         display: none;
     }
 }
+
