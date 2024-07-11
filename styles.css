@@ -428,6 +428,16 @@ footer {
     html {
         font-size: 40%;
     }
+    nav ul {
+        display: none;
+    }
+    
+    .hamburger img {
+        width: 10rem;
+        height: 8rem;
+    }
+
+    
 }
 
 @media (max-width: 500px) {
