@@ -36,11 +36,11 @@ body {
     align-items: center;
     width: 13.375rem;
     height: 5.75rem;
-    border-radius: 30px;
+    border-radius: 2.438rem;
     color: var(--alto);
     background: var(--aggie-maroon);
     font-family: "Inter", sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     text-transform: capitalize;
@@ -50,7 +50,7 @@ body {
 header {
     width: 100%;
     height: auto;
-    margin-bottom: 34px;
+    margin-bottom: 2.125rem;
 }
 
 /* Styling navbar*/
@@ -59,15 +59,14 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    top: 52px;
+    top: 3.25rem;
     position: absolute;
     z-index: 1;
 }
 
-nav .top-logo {
-    width: 176px;
-    height: 70.218px;
-    flex-shrink: 0;
+nav .top-logo img {
+    width: 11rem;
+    height: 4.389rem;
 }
 
 .navburger-container {
@@ -78,17 +77,22 @@ nav .top-logo {
     margin-right: 2.7rem;
 }
 
+.hamburger img {
+    width: 4rem;
+    height: 4.375rem;
+}
+
 nav ul {
     display: flex;
     align-items: center;
-    gap: 48px;
+    gap: 3rem;
     list-style: none;
 }
 
 nav ul li a {
     color: var(--alto);
     font-family: Inter;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -104,7 +108,7 @@ nav ul li a {
     width: 100%;
     align-items: top;
     justify-content: space-between;
-    padding-top: 178px;
+    padding-top: 11.125rem;
 }
 
 
@@ -112,7 +116,7 @@ nav ul li a {
     color: var(--barley-white);
     /* turtle website subheading 1 */
     font-family: Inter;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-style: normal;
     font-weight: 500;
     text-transform: uppercase;
@@ -123,7 +127,7 @@ nav ul li a {
     color: var(--barley-white);
     /* turtle website h1 */
     font-family: Raleway;
-    font-size: 42px;
+    font-size: 2.625rem;
     font-style: normal;
     font-weight: 500;
 }
@@ -137,10 +141,10 @@ nav ul li a {
 
 .mission-section {
     background: var(--mine-shaft);
-    border-radius: 30px;
-    padding-top: 54.69px;
-    padding-bottom: 72.59px;
-    margin-bottom: 43px;
+    border-radius: 1.875rem;
+    padding-top: 3.418rem;
+    padding-bottom: 4.537rem;
+    margin-bottom: 2.688rem;
 }
 
 .mission-section h3 {
@@ -170,10 +174,10 @@ nav ul li a {
 /* featured project section */
 .featured-project-section {
     background: white;
-    border-radius: 30px;
-    padding-top: 46px;
-    padding-bottom: 29px;
-    padding-left: 43px;
+    border-radius: 1.875rem;
+    padding-top: 2.875rem;
+    padding-bottom: 1.813rem;
+    padding-left: 2.688rem;
 }
 
 
@@ -188,9 +192,9 @@ nav ul li a {
 }
 
 .featured-project-section img {
-    width: 304.472px;
-    height: 287px;
-    border-radius: 30px;
+    width: 19.03rem;
+    height: 17.938rem;
+    border-radius: 1.875rem;
 }
 
 .featured-project-section h2 {
@@ -198,7 +202,7 @@ nav ul li a {
     color: black;
     /* turtle website subheading 1 */
     font-family: Raleway;
-    font-size: 34px;
+    font-size: 2.125rem;
     font-style: normal;
     font-weight: 500;
 }
@@ -206,7 +210,7 @@ nav ul li a {
 .featured-project-section p {
     color: black;
     font-family: Raleway;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-style: normal;
     font-weight: 400;
 }
@@ -215,7 +219,7 @@ nav ul li a {
 /* featured project section end */
 
 .get-involved-section {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     padding-left: 1.88rem;
     padding-right: 1.88rem;
 }
@@ -245,19 +249,19 @@ nav ul li a {
 }
 
 .join-card .btn {
-    margin-top: 80px;
+    margin-top: 5rem;
 }
 
 .join-card img {
     max-width: 43.25rem;
     max-height: 16.125rem;
-    border-radius: 25px;
+    border-radius: 1.875rem;
 }
 
 .partner-box {
     text-align: center;
     color: #000;
-    border-radius: 25px;
+    border-radius: 1.875rem;
     background-color: white;
     padding-top: 2.38rem;
 }
@@ -277,7 +281,7 @@ nav ul li a {
 }
 
 .contact-us-section {
-    margin: 80px 0px;
+    margin: 5rem 0px;
     display: flex;
     justify-content: center;
 }
@@ -291,7 +295,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 3.06rem;
-    padding: 15px 32%;
+    padding: 0.938rem 32%;
     color: #000;
 }
 
@@ -304,7 +308,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 2.87rem;
-    padding: 15px 32%;
+    padding: 0.938rem 32%;
     color: #000;
 }
 
@@ -323,24 +327,123 @@ footer {
 }
 
 .footer-logo {
-    padding-top: 30px;
+    padding-top: 1.875rem;
+    width: 100%;
+    height: 4.38863rem;
     display: flex;
     justify-content: center;
 }
 
-@media (max-width: 1120px) {
-    .join-card {
-        flex-direction: column;
-    }
+.footer-img {
+    width: 4.34025rem;
+    height: 3.125rem;
+}
 
-    .join-card img {
-        margin-top: 2.75rem;
+@media (min-width: 2000) {
+    html {
+        font-size: 180%;
     }
 }
 
-@media (max-width: 925px) {
-    nav ul {
-        display: none;
+@media (min-width: 1900px) {
+    html {
+        font-size: 170%;
     }
 }
 
+@media (min-width: 1800px) {
+    html {
+        font-size: 160%;
+    }
+}
+
+@media (min-width: 1700px) {
+    html {
+        font-size: 150%;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    html {
+        font-size: 140%;
+    }
+}
+
+@media (min-width: 1500px) {
+    html {
+        font-size: 130%;
+    }
+}
+
+@media (min-width: 1400px) {
+    html {
+        font-size: 120%;
+    }
+}
+
+
+@media (min-width: 1300px) {
+    html {
+        font-size: 110%;
+    }
+}
+
+
+
+@media (max-width: 1100px) {
+
+    html {
+        font-size: 90%;
+    }
+
+
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 20%;
+    }
+}
+
+@media (max-width: 300px) {
+    html {
+        font-size: 10%;
+    }
+}
