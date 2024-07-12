@@ -442,18 +442,18 @@ footer {
 
 @media (max-width: 500px) {
     html {
-        font-size: 30%;
+        font-size: 5px;
     }
 }
 
 @media (max-width: 400px) {
     html {
-        font-size: 20%;
+        font-size: 3.2px;
     }
 }
 
 @media (max-width: 300px) {
     html {
-        font-size: 10%;
+        font-size: 1.6px;
     }
 }
