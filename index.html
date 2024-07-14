@@ -21,7 +21,7 @@
 
 <body>
     <div class="main-wrapper">
-        
+
 
         <!-- Header includes hero section, navigation -->
         <header>
@@ -29,6 +29,26 @@
             <nav>
                 <div class="top-logo">
                     <img src="images/homepage_files/turtle-logo-text.svg">
+                </div>
+
+                <div class="off-screen-menu">
+                    <ul data-visible="false" id="primary-navigation">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+    
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+    
+                        <li>
+                            <a href="#">Research</a>
+                        </li>
+    
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="navburger-container">
@@ -50,11 +70,10 @@
                         </li>
                     </ul>
 
-                    <div class="hamburger">
-                        <img src="images/homepage_files/hamburger-icon.svg">
+                    <div aria-controls="primary-navigation" aria-expanded="false" id="nav-toggle" class="hamburger">
+                        <img id="toggle-image" src="images/homepage_files/hamburger-icon.svg">
                     </div>
                 </div>
-            </nav>
             </nav>
 
             <div class="hero-section">
@@ -178,7 +197,7 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </body>
 
 </html>
