@@ -88,7 +88,7 @@ nav .top-logo img {
 
 .hamburger img[src="images/homepage_files/close-icon.svg"] {
     position: fixed;
-    margin: 0;
+    margin: 0 0 0 2.7;
     right: 2.7rem;
     width: 2rem;
     height: 1.875rem;
@@ -473,6 +473,14 @@ footer {
     .hamburger img {
         width: 10rem;
         height: 8rem;
+    }
+
+    .hamburger img[src="images/homepage_files/close-icon.svg"] {
+        position: fixed;
+        margin: 0 0 0 2.7;
+        right: 2.7rem;
+        width: 7.776rem;
+        height: 5.4rem;
     }
 
 
