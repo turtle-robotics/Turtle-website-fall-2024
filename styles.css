@@ -62,6 +62,7 @@ nav {
     top: 3.25rem;
     position: absolute;
     z-index: 1;
+    padding-right: 5em;
 }
 
 nav .top-logo img {
@@ -76,6 +77,20 @@ nav .top-logo img {
     gap: 7.44rem;
     margin-right: 2.7rem;
 }
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    border-radius: 1em;
+}
 
 .hamburger {
     z-index: 9999;
@@ -84,6 +99,9 @@ nav .top-logo img {
 .hamburger img {
     width: 4rem;
     height: 4.375rem;
+}
+.burger-links {
+    display: none;
 }
 
 .hamburger img[src="images/homepage_files/close-icon.svg"] {
@@ -484,6 +502,50 @@ footer {
     }
 
 
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        border-radius: 3em;
+    }
+    
+    .burger-links.active {
+        display: flex;
+        flex-direction: column;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: left 0.3s ease-in-out;
+    }
+    .burger-link {
+        height: 3em;
+        width: 33vh;
+        text-align: center;
+        font-size: 3em;        
+    }
+
+    .burger-link a {
+        color: var(--alto);
+        font-family: Inter;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 500px) {
