@@ -151,6 +151,11 @@ nav ul li a {
     height: 24.688rem;
 }
 
+.hero-section .turtle-research img {
+    width: 55.75rem;
+    height: 38.4375rem;
+}
+
 /* mission section */
 
 .mission-section {
@@ -313,10 +318,6 @@ footer {
     color: #000;
 }
 
-.footer-links>div {
-    cursor: pointer;
-}
-
 .icon-wrapper {
     display: flex;
     flex-direction: row;
@@ -330,7 +331,7 @@ footer {
     cursor: pointer;
 }
 
-.footer-links {
+.footer-links a{
     color: var(--mine-shaft);
     font-family: Inter;
     font-size: 1.5rem;
@@ -338,6 +339,8 @@ footer {
     font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .footer-logo {
