@@ -14,6 +14,7 @@
     box-sizing: border-box;
 }
 
+/* Home page start */
 body {
     margin: 0;
     color: white;
@@ -45,6 +46,7 @@ body {
     font-weight: 700;
     text-transform: capitalize;
     text-decoration: none;
+    border: none;
 }
 
 header {
@@ -77,10 +79,12 @@ nav .top-logo img {
     gap: 7.44rem;
     margin-right: 2.7rem;
 }
+
 .hamburger {
     cursor: pointer;
     display: none;
 }
+
 .bar {
     display: block;
     width: 25px;
@@ -110,6 +114,7 @@ nav ul li a {
     text-transform: capitalize;
     text-decoration: none;
 }
+
 .burger-links {
     display: none;
 }
@@ -137,6 +142,7 @@ nav ul li a {
     margin-bottom: 0;
 }
 
+
 .hero-section .left h1 {
     color: var(--barley-white);
     /* turtle website h1 */
@@ -149,11 +155,6 @@ nav ul li a {
 .hero-section .turtle-screwdriver img {
     width: 27.125rem;
     height: 24.688rem;
-}
-
-.hero-section .turtle-research img {
-    width: 55.75rem;
-    height: 38.4375rem;
 }
 
 /* mission section */
@@ -331,7 +332,7 @@ footer {
     cursor: pointer;
 }
 
-.footer-links a{
+.footer-links a {
     color: var(--mine-shaft);
     font-family: Inter;
     font-size: 1.5rem;
@@ -355,6 +356,102 @@ footer {
     width: 4.34025rem;
     height: 3.125rem;
 }
+
+/* End of homepage styling */
+
+/* Research page styling */
+
+.hero-section .turtle-research img {
+    width: 55.75rem;
+    height: 38.4375rem;
+}
+
+/* End of research page styling */
+
+/* Contact page styling */
+.contact-section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 11.125rem;
+    flex-direction: column;
+}
+
+.contact-section h1 {
+    color: var(--barley-white);
+    /* turtle website h1 */
+    font-family: Raleway;
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 4.5rem;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    height: 46.813rem;
+    width: 52.04481rem;
+    gap: 3.69rem;
+    margin-top: 2.87rem;
+    flex-direction: column;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--alto);
+    border-radius: 1.875rem;
+    width: 64.5rem;
+    height: 51.8125rem;
+}
+
+.contact-inputs {
+    background-color: var(--mine-shaft);
+    border-radius: 1.875rem;
+    /* turtle website largest body text */
+    color: var(--alto);
+    border: none;
+    outline: none;
+    font-family: Raleway;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 2.52rem;
+    padding-top: .1rem;
+}
+
+.contact-wrapper input {
+    width: 52.04481rem;
+    height: 5.0625rem;
+}
+
+.contact-wrapper textarea {
+    width: 52.04481rem;
+    height: 19.875rem;
+    padding-top: 1.6rem;
+}
+
+.contact-inputs::placeholder {
+    color: var(--alto);
+    opacity: 46%;
+    /* nav link */
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.contact-inputs:focus {
+    border: 0.5rem solid black;
+}
+
+
+/* End of contact page styling */
+
 
 @media (min-width: 2000) {
     html {
@@ -445,9 +542,11 @@ footer {
     html {
         font-size: 40%;
     }
+
     nav ul {
         display: none;
     }
+
     .hamburger {
         display: flex;
         z-index: 100;
@@ -455,22 +554,26 @@ footer {
         flex-direction: column;
         align-items: end;
     }
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
+
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(10px) rotate(45deg);
     }
+
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
     }
+
     .burger-menu {
         display: flex;
         flex-direction: column;
         background-color: #000;
         border-radius: 3em;
     }
-    
+
     .burger-links {
         display: flex;
         flex-direction: column;
@@ -484,7 +587,8 @@ footer {
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
     }
-    .burger-links[data-visible = "true"] {
+
+    .burger-links[data-visible="true"] {
         transform: translateX(0%);
     }
 
@@ -492,7 +596,7 @@ footer {
         height: 3em;
         width: 33vh;
         text-align: center;
-        font-size: 3em;        
+        font-size: 3em;
     }
 
     .burger-link a {
