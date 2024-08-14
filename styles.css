@@ -452,6 +452,118 @@ footer {
 
 /* End of contact page styling */
 
+/* about page styling */
+.about-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-card-row {
+    display: flex;
+    justify-content: center;
+    gap: 2.06rem;
+}
+
+.left p {
+    color: var(--barley-white);
+    /* turtle website largest body text */
+    font-family: Raleway;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Display-Medium-Line-Height, 3.25rem);
+    letter-spacing: var(--Display-Medium-Tracking, 0rem);
+}
+
+.turtle-group img {
+    width: 36.34469rem;
+    height: 34.1875rem;
+}
+
+.about-card-black {
+    color: var(--alto);
+    background-color: black;
+    border-radius: 1.875rem;
+    display: flex;
+    gap: 1.5rem;
+    width: fit-content;
+    height: 10.6875rem;
+    align-items: center;
+}
+
+.about-card-grey {
+    color: var(--alto);
+    background-color: var(--mine-shaft);
+    border-radius: 1.875rem;
+    display: flex;
+    gap: 1.5rem;
+    width: fit-content;
+    height: 10.6875rem;
+    align-items: center;
+}
+
+.about-card-white {
+    color: black;
+    background-color: white;
+    border-radius: 1.875rem;
+    display: flex;
+    gap: 1.5rem;
+    width: fit-content;
+    height: 10.6875rem;
+    align-items: center;
+}
+
+
+.about-person-icon {
+    width: 6.5rem;
+    height: 6.5rem;
+    padding-left: 1.81rem;
+}
+
+.about-card-position {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    height: 1.5rem;
+    /* turtle website small subheading */
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.about-card-name {
+    padding: 0;
+    margin: 0;
+    height: 3.25rem;
+    /* turtle website h3 */
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Display-Medium-Line-Height, 3.25rem);
+    /* 216.667% */
+    letter-spacing: var(--Display-Medium-Tracking, 0rem);
+    text-transform: capitalize;
+}
+
+.about-card-right img {
+    width: 2.02944rem;
+    height: 1.4375rem;
+}
+
+.about-card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.37rem;
+    padding-right: 2.25rem;
+}
+
+/* end of about page styling */
 
 @media (min-width: 2000) {
     html {
