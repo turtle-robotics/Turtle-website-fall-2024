@@ -152,9 +152,9 @@ nav ul li a {
     font-weight: 500;
 }
 
-.hero-section .turtle-screwdriver img {
-    width: 27.125rem;
-    height: 24.688rem;
+.hero-section .gear img {
+    width: 30.25rem;
+    height: 30.25rem;
 }
 
 /* mission section */
@@ -361,11 +361,208 @@ footer {
 
 /* Research page styling */
 
-.hero-section .turtle-research img {
-    width: 55.75rem;
-    height: 38.4375rem;
+.hero-section .screwdriver img {
+    width: 27.375rem;
+    height: 27.375rem;
 }
 
+.learn-more {
+    margin-bottom: 3.06rem;
+    color: var(--barley-white);
+    /* turtle website h1 */
+    font-family: Raleway;
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.63rem;
+}
+
+.project-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3E3E3E;
+    border-radius: 1.875rem;
+    height: fit-content;
+}
+
+.project-wrapper:nth-child(even) {
+    background-color: #D1D1D1;
+}
+
+.project-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.project-name-grey {
+    padding-left: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--alto);
+    /* turtle website h2 */
+    font-family: Raleway;
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Display-Medium-Line-Height, 3.25rem);
+    /* 152.941% */
+    letter-spacing: var(--Display-Medium-Tracking, 0rem);
+}
+
+.project-name-white {
+    padding-left: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* turtle website h2 */
+    font-family: Raleway;
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Display-Medium-Line-Height, 3.25rem);
+    /* 152.941% */
+    letter-spacing: var(--Display-Medium-Tracking, 0rem);
+}
+
+
+
+.chevron {
+    width: 3.6875rem;
+    height: 3.6875rem;
+    transform: rotate(-90deg);
+    margin-right: 2.5rem;
+    transition: transform 0.3s ease-in-out;
+    color: black;
+}
+
+.chevron.active {
+    transform: rotate(90deg);
+}
+
+.expandable {
+    display: block;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.project-description {
+    margin-left: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.looking-for {
+    margin-right: 2.5rem;
+}
+
+.looking-for-heading-grey {
+    color: var(--alto);
+
+    /* turtle website subheading 1 */
+    font-family: Inter;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.looking-for-heading-white {
+    color: black;
+    /* turtle website subheading 1 */
+    font-family: Inter;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.desired-traits-grey {
+    color: var(--alto);
+    /* turtle website largest body text */
+    font-family: Raleway;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Display-Medium-Line-Height, 3.25rem);
+    /* 185.714% */
+    letter-spacing: var(--Display-Medium-Tracking, 0rem);
+}
+
+.desired-traits-white {
+    color: black;
+    /* turtle website largest body text */
+    font-family: Raleway;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Display-Medium-Line-Height, 3.25rem);
+    /* 185.714% */
+    letter-spacing: var(--Display-Medium-Tracking, 0rem);
+}
+
+
+.description-text-grey {
+    color: var(--alto);
+    width: 39.125rem;
+    /* turtle website largest body text */
+    font-family: Raleway;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Display-Medium-Line-Height, 3.25rem);
+    /* 185.714% */
+    letter-spacing: var(--Display-Medium-Tracking, 0rem);
+
+}
+
+.description-text-white {
+    color: black;
+    width: 39.125rem;
+    /* turtle website largest body text */
+    font-family: Raleway;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Display-Medium-Line-Height, 3.25rem);
+    /* 185.714% */
+    letter-spacing: var(--Display-Medium-Tracking, 0rem);
+}
+
+
+
+.beest-project-vid{
+    width: 37.125rem;
+    height: 20.5rem;
+    border-radius: 1.875rem;
+}
+
+.placeholder img {
+    width: 37.125rem;
+    height: 20.5rem;
+    border-radius: 1.875rem;
+}
 /* End of research page styling */
 
 /* Contact page styling */
@@ -476,9 +673,13 @@ footer {
     letter-spacing: var(--Display-Medium-Tracking, 0rem);
 }
 
-.turtle-group img {
-    width: 36.34469rem;
-    height: 34.1875rem;
+.info img {
+    display: flex;
+    width: 38.75rem;
+    height: 38.75rem;
+    padding: 3.22919rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-card-black {
