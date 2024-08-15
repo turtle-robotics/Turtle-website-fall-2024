@@ -439,7 +439,6 @@ footer {
 
 
 
-
 .chevron {
     width: 3.6875rem;
     height: 3.6875rem;
@@ -455,6 +454,7 @@ footer {
 
 .expandable {
     display: block;
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
@@ -463,23 +463,106 @@ footer {
 .project-content {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .project-description {
-    width: 45%;
+    margin-left: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.looking-for {
+    margin-right: 2.5rem;
+}
+
+.looking-for-heading-grey {
+    color: var(--alto);
+
+    /* turtle website subheading 1 */
+    font-family: Inter;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.looking-for-heading-white {
+    color: black;
+    /* turtle website subheading 1 */
+    font-family: Inter;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.desired-traits-grey {
+    color: var(--alto);
+    /* turtle website largest body text */
+    font-family: Raleway;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Display-Medium-Line-Height, 3.25rem);
+    /* 185.714% */
+    letter-spacing: var(--Display-Medium-Tracking, 0rem);
+}
+
+.desired-traits-white {
+    color: black;
+    /* turtle website largest body text */
+    font-family: Raleway;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Display-Medium-Line-Height, 3.25rem);
+    /* 185.714% */
+    letter-spacing: var(--Display-Medium-Tracking, 0rem);
+}
+
+
+.description-text-grey {
+    color: var(--alto);
+    width: 39.125rem;
+    /* turtle website largest body text */
+    font-family: Raleway;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Display-Medium-Line-Height, 3.25rem);
+    /* 185.714% */
+    letter-spacing: var(--Display-Medium-Tracking, 0rem);
 
 }
 
-.description-text {
-    line-height: 2;
-    margin: 15px 0;
+.description-text-white {
+    color: black;
+    width: 39.125rem;
+    /* turtle website largest body text */
+    font-family: Raleway;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Display-Medium-Line-Height, 3.25rem);
+    /* 185.714% */
+    letter-spacing: var(--Display-Medium-Tracking, 0rem);
 }
 
-.project-img {
-    width: 100%;
-    border-radius: 1.5em;
+
+
+.beest-project-vid{
+    width: 37.125rem;
+    height: 20.5rem;
+    border-radius: 1.875rem;
 }
 
+.placeholder img {
+    width: 37.125rem;
+    height: 20.5rem;
+    border-radius: 1.875rem;
+}
 /* End of research page styling */
 
 /* Contact page styling */
