@@ -740,3 +740,73 @@ footer {
         font-size: 10%;
     }
 }
+
+/* Research Page */
+.learn-more {
+    margin-bottom: 50px;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-wrapper {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3E3E3E;
+    border-radius: 1.5em;
+}
+.project-wrapper:nth-child(even) {
+    background-color: #D1D1D1;
+}
+
+.project-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.project-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    color: black;
+}
+.chevron {
+    font-size: 64px;
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease-in-out;
+    color: black;
+}
+.chevron.active {
+    transform: rotate(90deg);
+}
+.expandable {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+.project-content {
+    display: flex;
+    justify-content: space-between;
+}
+.project-description {
+    width: 45%;
+
+}
+.description-text {
+    line-height: 2;
+    margin: 15px 0;
+}
+.project-img {
+    width: 100%;
+    border-radius: 1.5em;
+}
