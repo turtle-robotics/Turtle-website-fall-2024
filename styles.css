@@ -152,9 +152,9 @@ nav ul li a {
     font-weight: 500;
 }
 
-.hero-section .turtle-screwdriver img {
-    width: 27.125rem;
-    height: 24.688rem;
+.hero-section .gear img {
+    width: 30.25rem;
+    height: 30.25rem;
 }
 
 /* mission section */
@@ -361,9 +361,123 @@ footer {
 
 /* Research page styling */
 
-.hero-section .turtle-research img {
-    width: 55.75rem;
-    height: 38.4375rem;
+.hero-section .screwdriver img {
+    width: 27.375rem;
+    height: 27.375rem;
+}
+
+.learn-more {
+    margin-bottom: 3.06rem;
+    color: var(--barley-white);
+    /* turtle website h1 */
+    font-family: Raleway;
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.63rem;
+}
+
+.project-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3E3E3E;
+    border-radius: 1.875rem;
+    height: fit-content;
+}
+
+.project-wrapper:nth-child(even) {
+    background-color: #D1D1D1;
+}
+
+.project-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.project-name-grey {
+    padding-left: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--alto);
+    /* turtle website h2 */
+    font-family: Raleway;
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Display-Medium-Line-Height, 3.25rem);
+    /* 152.941% */
+    letter-spacing: var(--Display-Medium-Tracking, 0rem);
+}
+
+.project-name-white {
+    padding-left: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* turtle website h2 */
+    font-family: Raleway;
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Display-Medium-Line-Height, 3.25rem);
+    /* 152.941% */
+    letter-spacing: var(--Display-Medium-Tracking, 0rem);
+}
+
+
+
+
+.chevron {
+    width: 3.6875rem;
+    height: 3.6875rem;
+    transform: rotate(-90deg);
+    margin-right: 2.5rem;
+    transition: transform 0.3s ease-in-out;
+    color: black;
+}
+
+.chevron.active {
+    transform: rotate(90deg);
+}
+
+.expandable {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-description {
+    width: 45%;
+
+}
+
+.description-text {
+    line-height: 2;
+    margin: 15px 0;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 1.5em;
 }
 
 /* End of research page styling */
@@ -476,9 +590,13 @@ footer {
     letter-spacing: var(--Display-Medium-Tracking, 0rem);
 }
 
-.turtle-group img {
-    width: 36.34469rem;
-    height: 34.1875rem;
+.info img {
+    display: flex;
+    width: 38.75rem;
+    height: 38.75rem;
+    padding: 3.22919rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-card-black {
@@ -739,74 +857,4 @@ footer {
     html {
         font-size: 10%;
     }
-}
-
-/* Research Page */
-.learn-more {
-    margin-bottom: 50px;
-}
-.projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.project-wrapper {
-    width: 100%;
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #3E3E3E;
-    border-radius: 1.5em;
-}
-.project-wrapper:nth-child(even) {
-    background-color: #D1D1D1;
-}
-
-.project-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-}
-.project-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 800;
-    color: black;
-}
-.chevron {
-    font-size: 64px;
-    transform: rotate(-90deg);
-    transition: transform 0.3s ease-in-out;
-    color: black;
-}
-.chevron.active {
-    transform: rotate(90deg);
-}
-.expandable {
-    display: block;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-}
-.project-content {
-    display: flex;
-    justify-content: space-between;
-}
-.project-description {
-    width: 45%;
-
-}
-.description-text {
-    line-height: 2;
-    margin: 15px 0;
-}
-.project-img {
-    width: 100%;
-    border-radius: 1.5em;
 }
