@@ -15,6 +15,7 @@
 }
 
 /* Home page start */
+
 body {
     margin: 0;
     color: white;
@@ -153,8 +154,8 @@ nav ul li a {
 }
 
 .hero-section .gear img {
-    width: 30.25rem;
-    height: 30.25rem;
+    width: 20rem;
+    height: 20rem;
 }
 
 /* mission section */
@@ -273,8 +274,8 @@ nav ul li a {
 }
 
 .join-card img {
-    max-width: 43.25rem;
-    max-height: 16.125rem;
+    max-width: 26.82rem;
+    max-height: 10rem;
     border-radius: 1.875rem;
 }
 
@@ -362,8 +363,8 @@ footer {
 /* Research page styling */
 
 .hero-section .screwdriver img {
-    width: 27.375rem;
-    height: 27.375rem;
+    width: 20rem;
+    height: 20rem;
 }
 
 .learn-more {
@@ -553,14 +554,14 @@ footer {
 
 
 .beest-project-vid{
-    width: 37.125rem;
-    height: 20.5rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 1.875rem;
 }
 
 .placeholder img {
-    width: 37.125rem;
-    height: 20.5rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 1.875rem;
 }
 /* End of research page styling */
@@ -588,7 +589,7 @@ footer {
     display: flex;
     align-items: center;
     height: 46.813rem;
-    width: 52.04481rem;
+    width: 100%;
     gap: 3.69rem;
     margin-top: 2.87rem;
     flex-direction: column;
@@ -600,7 +601,7 @@ footer {
     align-items: center;
     background-color: var(--alto);
     border-radius: 1.875rem;
-    width: 64.5rem;
+    width: 100%;
     height: 51.8125rem;
 }
 
@@ -620,12 +621,12 @@ footer {
 }
 
 .contact-wrapper input {
-    width: 52.04481rem;
+    width: 90%;
     height: 5.0625rem;
 }
 
 .contact-wrapper textarea {
-    width: 52.04481rem;
+    width: 90%;
     height: 19.875rem;
     padding-top: 1.6rem;
 }
@@ -675,9 +676,8 @@ footer {
 
 .info img {
     display: flex;
-    width: 38.75rem;
-    height: 38.75rem;
-    padding: 3.22919rem;
+    width: 20rem;
+    height: 20rem;
     justify-content: center;
     align-items: center;
 }
@@ -689,7 +689,7 @@ footer {
     display: flex;
     gap: 1.5rem;
     width: fit-content;
-    height: 10.6875rem;
+    height: fit-content;
     align-items: center;
 }
 
@@ -700,7 +700,7 @@ footer {
     display: flex;
     gap: 1.5rem;
     width: fit-content;
-    height: 10.6875rem;
+    height: fit-content;
     align-items: center;
 }
 
@@ -711,7 +711,7 @@ footer {
     display: flex;
     gap: 1.5rem;
     width: fit-content;
-    height: 10.6875rem;
+    height: fit-content;
     align-items: center;
 }
 
@@ -723,10 +723,11 @@ footer {
 }
 
 .about-card-position {
+    padding-top: 2.06rem;
     text-transform: uppercase;
-    padding: 0;
+    padding-bottom: .5rem;
     margin: 0;
-    height: 1.5rem;
+    height: auto;
     /* turtle website small subheading */
     font-family: Inter;
     font-size: 1.25rem;
@@ -737,21 +738,22 @@ footer {
 }
 
 .about-card-name {
-    padding: 0;
-    margin: 0;
-    height: 3.25rem;
+    padding: .1rem;
+    padding-bottom: .2rem;
+    margin: .1rem;
+    height: auto;
     /* turtle website h3 */
     font-family: Raleway;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
-    line-height: var(--Display-Medium-Line-Height, 3.25rem);
     /* 216.667% */
     letter-spacing: var(--Display-Medium-Tracking, 0rem);
     text-transform: capitalize;
 }
 
 .about-card-right img {
+    padding: .1rem;
     width: 2.02944rem;
     height: 1.4375rem;
 }
@@ -762,6 +764,7 @@ footer {
     justify-content: center;
     gap: 0.37rem;
     padding-right: 2.25rem;
+    padding-bottom: 1.94rem;
 }
 
 /* end of about page styling */
@@ -922,12 +925,117 @@ footer {
         text-transform: capitalize;
         text-decoration: none;
     }
+
+    /* research page styling */
+    .project-description {
+        margin-left: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    .looking-for {
+        margin-right: 2.5rem;
+    }
+    
+    .looking-for-heading-grey {
+        color: var(--alto);
+    
+        /* turtle website subheading 1 */
+        font-family: Inter;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    
+    .looking-for-heading-white {
+        color: black;
+        /* turtle website subheading 1 */
+        font-family: Inter;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    
+    .desired-traits-grey {
+        color: var(--alto);
+        /* turtle website largest body text */
+        font-family: Raleway;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--Display-Medium-Line-Height, 2rem);
+        /* 185.714% */
+        letter-spacing: var(--Display-Medium-Tracking, 0rem);
+    }
+    
+    .desired-traits-white {
+        color: black;
+        /* turtle website largest body text */
+        font-family: Raleway;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--Display-Medium-Line-Height, 2rem);
+        /* 185.714% */
+        letter-spacing: var(--Display-Medium-Tracking, 0rem);
+    }
+    
+    
+    .description-text-grey {
+        color: var(--alto);
+        width: 15rem;
+        /* turtle website largest body text */
+        font-family: Raleway;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--Display-Medium-Line-Height, 2rem);
+        /* 185.714% */
+        letter-spacing: var(--Display-Medium-Tracking, 0rem);
+    
+    }
+    
+    .description-text-white {
+        color: black;
+        width: 15rem;
+        /* turtle website largest body text */
+        font-family: Raleway;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--Display-Medium-Line-Height, 2rem);
+        /* 185.714% */
+        letter-spacing: var(--Display-Medium-Tracking, 0rem);
+    }
+    
+    
+    
+    .beest-project-vid{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 1.875rem;
+    }
+    
+    .placeholder img {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 1.875rem;
+    }
+
+    /* end of research page styling */
+
+    
 }
 
 @media (max-width: 500px) {
     html {
         font-size: 30%;
     }
+
+
 }
 
 @media (max-width: 400px) {
