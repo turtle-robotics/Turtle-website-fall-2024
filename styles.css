@@ -274,8 +274,8 @@ nav ul li a {
 }
 
 .join-card img {
-    max-width: 26.82rem;
-    max-height: 10rem;
+    max-width: 43.25rem;
+    max-height: 16.125rem;
     border-radius: 1.875rem;
 }
 
@@ -926,6 +926,32 @@ footer {
         text-decoration: none;
     }
 
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 9.3rem;
+        height: 4rem;
+        border-radius: 2.438rem;
+        color: var(--alto);
+        background: var(--aggie-maroon);
+        font-family: "Inter", sans-serif;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-decoration: none;
+        border: none;
+    }
+
+    /* home page styling */
+    .join-card img {
+        max-width: 26.82rem;
+        max-height: 10rem;
+        border-radius: 1.875rem;
+    }
+    /* end of homepage styling */
+
     /* research page styling */
     .project-description {
         margin-left: 2.5rem;
@@ -1027,6 +1053,7 @@ footer {
 
     /* end of research page styling */
 
+    
     
 }
 
