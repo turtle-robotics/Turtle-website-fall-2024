@@ -4,6 +4,7 @@
     --mine-shaft: #3E3E3E;
     --aggie-maroon: #500000;
     --barley-white: #FFEFCE;
+    overscroll-behavior: none;
 }
 
 /*all elements and anything after and before */
@@ -15,6 +16,11 @@
 }
 
 /* Home page start */
+.html{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
 
 body {
     margin: 0;
@@ -22,6 +28,7 @@ body {
     font-family: "Raleway", sans-serif;
     width: 100%;
     overflow-x: hidden;
+    position: relative;
 }
 
 
@@ -63,9 +70,8 @@ nav {
     justify-content: space-between;
     width: 100%;
     top: 3.25rem;
-    position: absolute;
+    position: relative;
     z-index: 1;
-    padding-right: 5em;
 }
 
 nav .top-logo img {
@@ -78,7 +84,7 @@ nav .top-logo img {
     justify-content: space-between;
     flex-direction: row;
     gap: 7.44rem;
-    margin-right: 2.7rem;
+    padding-right: 2.7rem;
 }
 
 .hamburger {
