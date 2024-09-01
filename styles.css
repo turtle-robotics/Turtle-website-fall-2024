@@ -16,7 +16,7 @@
 }
 
 /* Home page start */
-.html{
+.html {
     position: fixed;
     overflow: hidden;
     width: 100%;
@@ -77,6 +77,21 @@ nav {
 nav .top-logo img {
     width: 11rem;
     height: 4.389rem;
+}
+
+nav .top-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .top-logo a {
+    color: var(--alto);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
 .navburger-container {
@@ -559,7 +574,7 @@ footer {
 
 
 
-.beest-project-vid{
+.beest-project-vid {
     width: 20rem;
     height: 20rem;
     border-radius: 1.875rem;
@@ -570,6 +585,7 @@ footer {
     height: 20rem;
     border-radius: 1.875rem;
 }
+
 /* End of research page styling */
 
 /* Contact page styling */
@@ -950,12 +966,13 @@ footer {
         border: none;
     }
 
-    /* home page styling */
+    /* homepage styling */
     .join-card img {
         max-width: 26.82rem;
         max-height: 10rem;
         border-radius: 1.875rem;
     }
+
     /* end of homepage styling */
 
     /* research page styling */
@@ -963,14 +980,14 @@ footer {
         margin-left: 2.5rem;
         padding-bottom: 2.5rem;
     }
-    
+
     .looking-for {
         margin-right: 2.5rem;
     }
-    
+
     .looking-for-heading-grey {
         color: var(--alto);
-    
+
         /* turtle website subheading 1 */
         font-family: Inter;
         font-size: 1.75rem;
@@ -979,7 +996,7 @@ footer {
         line-height: normal;
         text-transform: uppercase;
     }
-    
+
     .looking-for-heading-white {
         color: black;
         /* turtle website subheading 1 */
@@ -990,7 +1007,7 @@ footer {
         line-height: normal;
         text-transform: uppercase;
     }
-    
+
     .desired-traits-grey {
         color: var(--alto);
         /* turtle website largest body text */
@@ -1002,7 +1019,7 @@ footer {
         /* 185.714% */
         letter-spacing: var(--Display-Medium-Tracking, 0rem);
     }
-    
+
     .desired-traits-white {
         color: black;
         /* turtle website largest body text */
@@ -1014,8 +1031,8 @@ footer {
         /* 185.714% */
         letter-spacing: var(--Display-Medium-Tracking, 0rem);
     }
-    
-    
+
+
     .description-text-grey {
         color: var(--alto);
         width: 15rem;
@@ -1027,9 +1044,9 @@ footer {
         line-height: var(--Display-Medium-Line-Height, 2rem);
         /* 185.714% */
         letter-spacing: var(--Display-Medium-Tracking, 0rem);
-    
+
     }
-    
+
     .description-text-white {
         color: black;
         width: 15rem;
@@ -1042,15 +1059,15 @@ footer {
         /* 185.714% */
         letter-spacing: var(--Display-Medium-Tracking, 0rem);
     }
-    
-    
-    
-    .beest-project-vid{
+
+
+
+    .beest-project-vid {
         width: 15rem;
         height: 15rem;
         border-radius: 1.875rem;
     }
-    
+
     .placeholder img {
         width: 15rem;
         height: 15rem;
@@ -1059,8 +1076,8 @@ footer {
 
     /* end of research page styling */
 
-    
-    
+
+
 }
 
 @media (max-width: 500px) {
