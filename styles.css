@@ -4,6 +4,9 @@
     --mine-shaft: #3E3E3E;
     --aggie-maroon: #500000;
     --barley-white: #FFEFCE;
+    --padding-large: 10vw;
+    --padding-small: 1rem;
+    --font-base: 1rem;
     overscroll-behavior: none;
 }
 
@@ -16,10 +19,11 @@
 }
 
 /* Home page start */
-.html {
+html {
     position: fixed;
     overflow: hidden;
     width: 100%;
+    height: 100%;
 }
 
 body {
@@ -27,8 +31,11 @@ body {
     color: white;
     font-family: "Raleway", sans-serif;
     width: 100%;
+    height: 100%;
     overflow-x: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -37,6 +44,9 @@ body {
     padding-left: 1.88rem;
     padding-right: 1.88rem;
     background: radial-gradient(50% 50% at 50% 50%, #500000 0%, #4E0000 28.5%, #4E0017 50%, #000 100%);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .btn {
@@ -72,6 +82,7 @@ nav {
     top: 3.25rem;
     position: relative;
     z-index: 1;
+    padding-bottom: 2rem;
 }
 
 nav .top-logo img {
@@ -188,10 +199,11 @@ nav ul li a {
     padding-top: 3.418rem;
     padding-bottom: 4.537rem;
     margin-bottom: 2.688rem;
+    padding-left: 2.688rem;
 }
 
 .mission-section h3 {
-    text-align: center;
+    text-align: left;
     color: var(--alto);
     /* turtle website subheading 1 */
     font-family: Inter;
@@ -204,7 +216,7 @@ nav ul li a {
 
 .mission-section p {
     /* turtle website largest body text */
-    text-align: center;
+    text-align: left;
     color: var(--alto);
     font-family: Raleway;
     font-size: 1.75rem;
@@ -302,11 +314,12 @@ nav ul li a {
 }
 
 .partner-box {
-    text-align: center;
+    text-align: left;
     color: #000;
     border-radius: 1.875rem;
     background-color: white;
     padding-top: 2.38rem;
+    padding-left: 2.688rem;
 }
 
 .partner-box h2 {
@@ -676,12 +689,16 @@ footer {
 /* about page styling */
 .about-card-wrapper {
     display: flex;
+    flex-wrap:wrap;
     flex-direction: column;
     gap: 2rem;
+    max-width: 100%;
 }
 
 .about-card-row {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
     justify-content: center;
     gap: 2.06rem;
 }
@@ -1081,22 +1098,56 @@ footer {
 
 }
 
-@media (max-width: 500px) {
+
+/* Media Queries */
+@media (max-width: 1000px) {
     html {
-        font-size: 30%;
+        font-size: 85%;
     }
+    .nav ul {
+        display: none;
+    }
+    .nav .hamburger {
+        display: flex;
+    }
+}
 
-
+@media (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
+    .main-wrapper, .hero-section, .mission-section, .featured-project-section, .get-involved-section {
+        padding: 1rem var(--padding-small);
+    }
+    .btn {
+        width: 11.63rem;
+        height: 5rem;
+    }
+    .burger-links.active{
+        align-items: center;
+    }
+    .burger-links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background: rgba(62, 62, 62, 0.8);
+        backdrop-filter: blur(5px);
+        border-radius: 1.5rem;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100vh;
+        padding-top: 7rem;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+    }
+    .burger-links.active {
+        transform: translateX(0);
+    }
 }
 
 @media (max-width: 400px) {
     html {
-        font-size: 20%;
-    }
-}
-
-@media (max-width: 300px) {
-    html {
-        font-size: 10%;
+        font-size: 40%;
     }
 }
