@@ -504,9 +504,24 @@ footer {
     width: 100%;
 }
 
+/* added for testing */
+.project-content-test {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .project-description {
     margin-left: 2.5rem;
     padding-bottom: 2.5rem;
+}
+
+/* added for testing */
+.project-description-test {
+    margin-left: 2.5rem;
+    padding-bottom: 2.5rem;
+    justify-content: center;
 }
 
 .looking-for {
@@ -599,6 +614,17 @@ footer {
 .placeholder img {
     width: 20rem;
     height: 20rem;
+    border-radius: 1.875rem;
+}
+
+.project-poster {
+    align-items: center;
+}
+
+
+.project-poster img {
+    width: 40rem;
+    height: 30rem;
     border-radius: 1.875rem;
 }
 

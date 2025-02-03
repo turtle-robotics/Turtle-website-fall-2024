@@ -28,3 +28,10 @@ for (let i = 0; i < exp.length; i++) {
         }
     });
 }
+
+// click test image
+let image = document.querySelector('.project-poster');
+
+image.addEventListener('click', function(e){
+      image.requestFullscreen();
+})
